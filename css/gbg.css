@@ -1,6 +1,12 @@
 body{
     background-color: #171314;
-    font-size: 30px;
+    font-size: 70px;
+    font-family: raleway;
+}
+
+@font-face{
+    font-family: raleway;
+    src: url("../assets/fonts/raleway_thin-webfont.tff");
 }
 
 .nav a{
@@ -8,6 +14,41 @@ body{
     color: #fbedb0;
 }
 
-.nav a:hover{
+.nav a:link{
+    color: #fbedb0;
+    animation-name: colorshift;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-play-state: running;
+    transition: 2s color ease;
+}
+
+.anim1{
+    animation-delay: 0.2s;
+}
+
+.anim2{
+    animation-delay: 0.4s;
+}
+
+.anim3{
+    animation-delay: 0.8s;
+}
+
+.nav:hover > a {
+    color: #fbedb0;
+    animation: 0;
+    animation-delay: 0s;
+  }
+
+.nav:hover > a:hover{
     color: #6EAE9D;
+    animation-delay: 0s;
+}
+
+@keyframes colorshift {
+    70% {color: #fbedb0;}
+    75%  {color: #85643E;}
+    80% {color: #6EAE9D;}
+    90% {color: #fbedb0}
 }
