@@ -6,7 +6,7 @@ body{
 
 @font-face{
     font-family: raleway;
-    src: url("../assets/fonts/raleway_thin-webfont.tff");
+    src: url("../assets/fonts/raleway_thin-webfont.ttf");
 }
 
 .nav a{
