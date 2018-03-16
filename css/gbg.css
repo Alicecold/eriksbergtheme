@@ -13,6 +13,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 90vw;
+    padding: 5px;
 }
 
 .nav a{
