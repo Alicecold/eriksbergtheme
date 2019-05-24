@@ -7,13 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buttons</title>
     <link rel="stylesheet" type="text/css" href="css/gbg.css">
+
+      <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin defer></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin defer></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js" defer></script>
+
+  <!-- Load our React component. -->
+  <script type="text/babel" src="./exclaim.js" defer></script>
 </head>
 
 <body>
     <div id="wrap">
-        <div class="content">
-
-        </div>
+        <div id="content"></div>
         <div class="footer">
             <div class="nav">
                 <a class="anim0" href="">?</a>

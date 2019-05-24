@@ -14,19 +14,40 @@ body{
 
     width: 100vw;
     height: 100vh;
+    margin: 0;
 }
 
-.content{
+#content{
     width: 100%;
-    height: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+a{
+    color: #fbedb0;
+    transition: 1s color ease;
+    text-decoration: none;
+}
+a:hover{
+    color: #85643E;
+}
+
+a:link{
+    color: #fbedb0;
+}
 
 @font-face{
     font-family: raleway;
     src: url("../assets/fonts/raleway_thin-webfont.ttf");
 }
 
+#content p{
+    color: #6EAE9D;
+    font-size: 20px;
+}
 .name h1{
     color: #fbedb0;
     margin: 0;
